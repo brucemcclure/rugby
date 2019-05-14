@@ -1,0 +1,61 @@
+body {
+  background-color: #f7f7f7;
+}
+
+#header h2 {
+  color: #354168;
+}
+#header button {
+  position: fixed;
+  top: 0.8vw;
+  right: 1vw;
+}
+
+#results_card_holder {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+#results_card_holder .card {
+  background-color: yellow;
+  width: 25vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#results_card_holder .card .top_half {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#results_card_holder .card .top_half img.crest {
+  width: 4vw;
+  height: auto;
+  max-height: 75px;
+}
+#results_card_holder .card .top_half .test {
+  background-color: red;
+  width: 2.5vw;
+  height: 3.5vw;
+  display: flex;
+}
+#results_card_holder .card .bottom_half {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#results_card_holder .card p {
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  #results_card_holder {
+    background-color: #ff00dd;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
