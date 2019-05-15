@@ -1,69 +1,99 @@
 @import "variables";
-
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
 
 
 body {
     background-color: $main-background-color;
+    //background-color: blue;
 }
 
 #header {
+    padding-bottom: 25px;
+}
 
     h2 {
         color: rgb(53, 65, 104);
-     
+        font-family: 'Francois One', sans-serif;
+        font-size: 22px;
+        display: inline-block;
+        padding-left: 1vw;
     }
 
-    button {
-        position: fixed;
-        top: 0.8vw;
-        right: 1vw;
+    #view_all {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        width: 111px;
+        height: 40px;
+        background-color: aqua;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: $view-all-button-color;
+        color: $text-color;
+        font-family: 'Francois One', sans-serif;
     }
-}
 
 #results_card_holder {
-    background-color: aqua;
+   // background-color: aqua;
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 
 
 .card {
-   background-color: yellow;
-   width: 25vw;
-   height: auto;
+   //background-color: yellow;
+   background-color: $card-background-color;
+   //padding-bottom: 2.5vw;
+   //padding-top: 2.5vw;
+   width: 360px;
+   height: 195px;
+   //width: 400px;
+   //height: 344px;
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
+   padding-top: 60px;
+   padding-bottom: 50px;
    
     .top_half {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        padding-top: 0px;
+     
 
 
-
-        img.crest {
-            width: 4vw;
-            height: auto;
-            max-height:75px;
-            }
+        .score_line {
+            font-size: 45px;
+            color: $text-color;
+            font-weight: bold;
+            font-family: 'Francois One', sans-serif;
+        }
 
         .test {
-            background-color: red;
-            //background-image: url(crests/crest1.jpg)
-            width: 2.5vw;
-            height: 3.5vw;
+            background-image: url(crests/crest1.jpg);
+            background-position: center;
+            width: 54px;
+            height: 100px;
             display: flex;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
 
-    .bottom_half {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+    .information {
+            //display: flex;
+            //flex-direction: row;
+            //justify-content: center;
+            //padding-bottom: 55px;
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 1.1vw;
     }
 
     p {
@@ -73,13 +103,29 @@ body {
     
     }
 
+    .date {
+        color: $stadium;
+
+    }
+
+    .venue {
+        color: $location-date-color;
+    }
+
+    .results {
+        color: $text-color;
+        font-weight: bold;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 14px;
+        
+    }
 }
 
 
-
-
-    @media screen and (min-width:800px) {
+    @media screen and (min-width:500px) {
         #results_card_holder {
-          background-color: rgb(255, 0, 221);
+            //display: flex;
+            //flex-direction: column;
+            //justify-content: space-around;
         }
       }

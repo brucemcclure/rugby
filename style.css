@@ -1,61 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css?family=Francois+One");
 body {
   background-color: #f7f7f7;
 }
 
-#header h2 {
-  color: #354168;
-}
-#header button {
-  position: fixed;
-  top: 0.8vw;
-  right: 1vw;
+#header {
+  padding-bottom: 25px;
 }
 
-#results_card_holder {
+h2 {
+  color: #354168;
+  font-family: "Francois One", sans-serif;
+  font-size: 22px;
+  display: inline-block;
+  padding-left: 1vw;
+}
+
+#view_all {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  width: 111px;
+  height: 40px;
   background-color: aqua;
   display: flex;
   flex-direction: row;
-  flex-flow: row wrap;
+  align-items: center;
   justify-content: space-evenly;
+  background-color: #dbe4d5;
+  color: #354168;
+  font-family: "Francois One", sans-serif;
+}
+
+#results_card_holder {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 #results_card_holder .card {
-  background-color: yellow;
-  width: 25vw;
-  height: auto;
+  background-color: white;
+  width: 360px;
+  height: 195px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
 #results_card_holder .card .top_half {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding-top: 0px;
 }
-#results_card_holder .card .top_half img.crest {
-  width: 4vw;
-  height: auto;
-  max-height: 75px;
+#results_card_holder .card .top_half .score_line {
+  font-size: 45px;
+  color: #354168;
+  font-weight: bold;
+  font-family: "Francois One", sans-serif;
 }
 #results_card_holder .card .top_half .test {
-  background-color: red;
-  width: 2.5vw;
-  height: 3.5vw;
+  background-image: url(crests/crest1.jpg);
+  background-position: center;
+  width: 54px;
+  height: 100px;
   display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-#results_card_holder .card .bottom_half {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+#results_card_holder .card .information {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.1vw;
 }
 #results_card_holder .card p {
   text-align: center;
 }
-
-@media screen and (min-width: 800px) {
-  #results_card_holder {
-    background-color: #ff00dd;
-  }
+#results_card_holder .date {
+  color: #616161;
+}
+#results_card_holder .venue {
+  color: #929292;
+}
+#results_card_holder .results {
+  color: #354168;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
