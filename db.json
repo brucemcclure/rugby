@@ -1,7 +1,7 @@
 {
     "matches": [
-      { "id": 1, "crest-home": 1, "crest-away": 2,"result-home": "55", "result-away": "12",  "date": "Semi Final - Saturday 4 April", "venue": "Olympic Blvd, Sydney" },
-      { "id": 2, "crest-home": 3, "crest-away": 4,"result-home": "16", "result-away": "42",  "date": "Semi Final - Saturday 4 April", "venue": "Olympic Blvd, Sydney" },
-      { "id": 3, "crest-home": 5, "crest-away": 6,"result-home": "", "result-away": "",  "date": "Final - Saturday 4 April", "venue": "Olympic Blvd, Sydney" }
+      { "id": 1,"event":"Result", "crestHome": "crests/crest1.jpg", "crestAway": "crests/crest1.jpg","resultHome": "55", "resultAway": "12",  "date": "Semi Final - Saturday 4 April", "venue": "Olympic Blvd, Sydney" },
+      { "id": 2,"event":"Result", "crestHome": "crests/crest3.png", "crestAway": "crests/crest4.png","resultHome": "16", "resultAway": "42",  "date": "Semi Final - Saturday 4 April", "venue": "Olympic Blvd, Sydney" },
+      { "id": 3,"event":"Fixture", "crestHome": "crests/crest5.jpg", "crestAway": "crests/crest1.jpg","resultHome": " ", "resultAway": " ",  "date": "Final - Saturday 4 April", "venue": "Olympic Blvd, Sydney" }
     ]
   }

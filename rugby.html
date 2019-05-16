@@ -11,7 +11,6 @@
 <body>
     <div id = "header">
    <h2>Results / Fixtures </h2>
-
     <div id = "view_all">
         <!-- <button type="button"> View all</button> -->
         View all
@@ -20,16 +19,16 @@
     </div>
     <div id = "results_card_holder">
 
-    <div class = "card">
+    <!-- <div class = "card">
         <p class = "results">Results</p>
         <div class="top_half">
             <div class = "test">
-                <!-- <img src="/crests/crest1.jpg" alt="" class="crest"> -->
+                
             </div>
             <p class = "score_line"> 55 : 12 </p>
             
             <div class = "test">
-                <!-- <img src="/crests/crest2.jpg" alt="" class="crest"> -->
+                
             </div>
         </div>
 
@@ -38,20 +37,20 @@
             
             <p class = "venue">Olympic Blvd, Sydney</p>
         </div>
-    </div>
+    </div> -->
 
-    <div class = "card">
+    <!-- <div class = "card">
         <p class = "results">Results</p>
         <div class="top_half">
             
             <div class = "test">
-                <!-- <img src="/crests/crest3.png" alt="" class="crest"> -->
+                
             </div>
 
             <p class = "score_line">16 : 42</p>
             
             <div class = "test">
-                <!-- <img src="/crests/crest4.png" alt="" class="crest"> -->
+              
             </div>
         </div>
 
@@ -60,17 +59,17 @@
             <p class = "venue">Olympic Blvd, Sydney</p>
         </div>
 
-    </div>
+    </div> -->
 
-    <div class = "card">
+    <!-- <div class = "card">
         <p class = "results">Fixture</p>
         <div class="top_half">
         <div class = "test">    
-            <!-- <img src="/crests/crest5.jpg" alt="" class="crest"> -->
+            
         </div>
             <p class = "score_line">:</p>
         <div class = "test">    
-            <!-- <img src="/crests/crest6.jpg" alt="" class="crest"> -->
+           
         </div>
         </div>
 
@@ -78,9 +77,56 @@
             <p class = "date">FINAL - Saturday 4 April</p>
             <p class = "venue">Olympic Blvd, Sydney</p>
         </div>
-    </div>
+    </div> -->
 
     </div>
     
+    <script>
+        fetch("http://localhost:3000/matches")
+        .then(function(response) { return response.json() })
+        .then(function(matches) {
+            let container = document.getElementById("results_card_holder");
+            let cards = "";
+            for(let match of matches){
+            console.log(match);
+            //going to build the cards to insert into the container
+                cards += `
+
+                    <div class = "card">
+                    <p class = "results">Results</p>
+                    <div class="top_half">
+                    <div class = "test">
+                
+                    </div>
+                    <p class = "score_line"> ${match.resultHome} : ${match.resultAway} </p>
+            
+                    <div class = "test">
+                
+                    </div>
+                    </div>
+
+                    <div class = "information">
+                    <p class = "date">${match.date}</p>
+            
+                    <p class = "venue">${match.venue}</p>
+                    </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                `;
+            }
+        container.innerHTML = cards;
+        });
+
+
+    </script>
+
 </body>
 </html>
