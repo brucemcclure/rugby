@@ -92,15 +92,17 @@
             //going to build the cards to insert into the container
                 cards += `
 
+                
+                
+
                     <div class = "card">
                     <p class = "results">Results</p>
                     <div class="top_half">
-                    <div class = "test">
-                
+                    <div class = "test" style="background-image:url(${match.crestHome})">
                     </div>
                     <p class = "score_line"> ${match.resultHome} : ${match.resultAway} </p>
             
-                    <div class = "test">
+                    <div class = "test" style="background-image:url(${match.crestAway})">
                 
                     </div>
                     </div>
@@ -111,14 +113,6 @@
                     <p class = "venue">${match.venue}</p>
                     </div>
                     </div>
-
-
-
-
-
-
-
-
 
                 `;
             }
