@@ -48,6 +48,12 @@ h2 {
   padding-top: 60px;
   padding-bottom: 50px;
 }
+#results_card_holder .card .results {
+  color: #354168;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+}
 #results_card_holder .card .top_half {
   display: flex;
   flex-direction: row;
@@ -61,7 +67,7 @@ h2 {
   font-weight: bold;
   font-family: "Francois One", sans-serif;
 }
-#results_card_holder .card .top_half .test {
+#results_card_holder .card .top_half .crest {
   background-position: center;
   width: 54px;
   height: 100px;
@@ -72,8 +78,6 @@ h2 {
 #results_card_holder .card .information {
   font-family: "Archivo Black", sans-serif;
   font-size: 1.1vw;
-}
-#results_card_holder .card p {
   text-align: center;
 }
 #results_card_holder .date {
@@ -82,11 +86,11 @@ h2 {
 #results_card_holder .venue {
   color: #929292;
 }
-#results_card_holder .results {
-  color: #354168;
-  font-weight: bold;
-  font-family: "Archivo Black", sans-serif;
-  font-size: 14px;
+
+@media only screen and (max-width: 700px) {
+  .date, .venue {
+    font-size: 3vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
